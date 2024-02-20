@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="total app/css/all.min.css">
+    <link rel="stylesheet" href="total app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="total app/css/main.css">
+</head>
+<body>
+    <div class="container mx-auto text-center ">
+
+
+            <h1 class="my-5">Bookmarker</h1>
+        <div class="d-flex align-items-center justify-content-center color my-bord">
+            <i class="fa-solid fa-bookmark fa-xl px-1 "></i>
+            <p class="my-3">   Bookmark your favorite sites  </p>
+            <i class="fa-solid fa-bookmark fa-xl px-1"></i>
+        </div>
+        <div class="my-4">
+            <div class="text-start">
+                <i class="fa-solid fa-book  "></i>
+                <label for="siteName" class="p-2"> Site Name</label>
+                <input oninput="validName()"  class="form-control is-valid" type="text" id="siteName" placeholder="Bookmark Name">
+            <div id="Namemessage" class="alert alert-danger d-none">Please Enter At Least 2 Characters</div>
+            </div>
+        </div>
+        <div class="my-bords">
+            <div class="text-start ">
+            <i class="fa-solid fa-link "></i>
+                <label for="siteUrl" class="p-2"> Site URL</label>
+                <input oninput="validUrl()" class="form-control is-valid" type="text" id="siteUrl" placeholder="WebSite Url">
+                <div id="Urlmessage" class="alert alert-danger d-none">You Must Include https: </div>
+            </div>
+            <button onclick="addData() " class="btn btn-danger m-4 px-5 is-valid ">Submit</button>
+        </div>
+   
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+                    </thead>
+                    <tbody id="display">
+                        
+                    </tbody>
+           </table>
+    </div>
+
+  
+
+    
+
+<!-- <a href="https://web.whatsapp.com/" class="btn btn-warning">visit</a> -->
+    <script src="total app/js/bootstrap.bundle.min.js"></script>
+    <script src="total app/js/main.js"></script>
+</body>
+</html>
